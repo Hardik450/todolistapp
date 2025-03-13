@@ -1,0 +1,61 @@
+ input, select{
+            width: 300px;
+            height: 30px;
+            border-radius: 7px;
+            font-weight: 600;
+            padding: 2px;
+            border: 2px solid blue;
+        }
+        h1{
+            color: navy;
+        }
+        *{
+            padding: 0.5%;
+            margin: 0.5%;
+        }
+        form{
+            width: 99%;
+            padding: 10px;
+        }
+        legend{
+            text-align: center;
+            width: 250px;
+        }
+        fieldset{
+            border: 2px solid blue;
+            border-radius: 7px;
+        }
+        textarea{
+            width: 90%;
+            height: 150px;
+            border-radius: 7px;
+            font-weight: 600;
+            padding: 2px;
+            border: 2px solid blue;
+        }
+        input[type='submit']{
+            background-color: cornflowerblue;
+            color: white;
+            width: 200px;
+            height: 30px;
+        }
+        table{
+            width:100%;
+            border:2px solid blue;
+            border-collapse:collapse;
+            border-radius:7px;
+            padding:2px;
+            background-color:sandybrown;
+            font-weight:600px;
+        }
+        a{
+            text-decoration:none;
+            background-color: navy;
+            color: white;
+            border:1px solid blue;
+            padding:2px;
+            font-size:large;
+            margin:2px;
+            height: 30px;
+            border-radius:6px;
+        }

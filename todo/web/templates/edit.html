@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend><h1>Add Your Task</h1></legend>
+        <input type="text" name="task" value="{{ edit.title }}" placeholder="Enter Your Task" required/>
+        <input type="datetime-local" name="datetime" value="{{ edit.datetime }}" placeholder="Add Due Date & Time" required/><br/>
+        <textarea name="description" placeholder="Add Little Description About Your Task" required>{{ edit.description }}</textarea>
+        <select name="priority" required>
+            <option value="select" {% if edit.priority == "select" %}selected{% endif %}>Select Your Priority</option>
+            <option value="high" {% if edit.priority == "high" %}selected{% endif %}>High</option>
+            <option value="medium" {% if edit.priority == "medium" %}selected{% endif %}>Medium</option>
+            <option value="low" {% if edit.priority == "low" %}selected{% endif %}>Low</option>
+        </select>
+        <select name="status" required>
+            <option value="incomplete" {% if edit.status == "incomplete" %}selected{% endif %}>Incomplete</option>
+            <option value="complete" {% if edit.status == "complete" %}selected{% endif %}>Complete</option>
+        </select>
+        <input type="submit" value="Update Task"/>
+    </fieldset>
+</form>
+{% endblock body %}
