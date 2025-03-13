@@ -1,0 +1,105 @@
+ input, select{
+            width: 300px;
+            height: 30px;
+            border-radius: 7px;
+            font-weight: 600;
+            padding: 2px;
+            border: 2px solid blue;
+        }
+        h1{
+            color: navy;
+        }
+        *{
+            padding: 0.5%;
+            margin: 0.5%;
+        }
+        form{
+            width: 99%;
+            padding: 10px;
+        }
+        legend{
+            text-align: center;
+            width: 250px;
+        }
+        fieldset{
+            border: 2px solid blue;
+            border-radius: 7px;
+        }
+        textarea{
+            width: 90%;
+            height: 150px;
+            border-radius: 7px;
+            font-weight: 600;
+            padding: 2px;
+            border: 2px solid blue;
+        }
+        input[type='submit']{
+            background-color: cornflowerblue;
+            color: white;
+            width: 200px;
+            height: 30px;
+        }
+        table{
+            width:100%;
+            border:2px solid blue;
+            border-collapse:collapse;
+            padding:2px;
+            background-color:sandybrown;
+            font-weight:600px;
+        }
+        a{
+            text-decoration:none;
+            background-color: navy;
+            color: white;
+            border:1px solid blue;
+            padding:2px;
+            margin:2px;
+            height: 30px;
+            border-radius:6px;
+        }
+        nav{
+            padding:0;
+            margin:0;
+            top:0;
+            left:0;
+            width:100%;
+            background-color:bisque;
+            position:fixed;
+        }
+        nav>h1{
+            display:inline;
+            color:navy;
+            padding:0;
+            margin:0;
+        }
+        nav>h1>a{
+            background-color:transparent;
+            color:navy;
+            border:none;
+        }
+        nav>ul{
+            display:inline-flex;
+            width:80%;
+            justify-content:flex-end;
+            gap:30px;
+            padding:0;
+            margin:0;
+            font-size:16px;
+            list-style:none;
+            color:navy;
+        }
+        nav>ul>li>a{
+            background-color:transparent;
+            color:navy;
+            border:none;
+        }
+        .webbanner{
+            background-image:url('15eed3ea-d1cf-49c1-b795-9a413dfda2a2.jpg');
+            width:100%;
+            height:100vh;
+            padding:0;
+            margin:0;
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            margin-top:12px;
+        }

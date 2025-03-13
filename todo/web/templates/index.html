@@ -1,0 +1,51 @@
+
+{%extends 'layout.html'%}
+{%block body%}
+<nav>
+    <h1><a href='/todolistapp/home'>To-Do List App</a></h1>
+    <ul>
+        <li><a href='/todolistapp/logout'>Logout</a></li>
+        <li>{{name}}</li>
+    </ul>
+</nav>
+ <form method="post">
+     {% csrf_token %}
+        <fieldset>
+            <legend><h1>Add Your Task</h1></legend>
+        <input type="text" name="task" placeholder="Enter Your Task" required/>
+        <input type="datetime-local" name="datetime" placeholder="Add Due Date & Time" required/><br/>
+        <textarea name="description" placeholder="Add Little Description About Your Task" required></textarea>
+        <select name="priority" required>
+            <option value="select">Select Your Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <select name="status" required>
+            <option value="incomplete">Incomplete</option>
+            <option value="complete">Complete</option>
+        </select>
+        <input type="submit" value="Add Task"/>
+    </fieldset>
+    </form>
+    <table border='1'>
+        <tr>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Due Date & Time</td>
+            <td>Priority</td>
+            <td>Status</td>
+            <td>Modification</td>
+        </tr>
+        {% for item in task%}
+        <tr>
+            <td>{{item.title}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.datetime}}</td>
+            <td>{{item.priority}}</td>
+            <td>{{item.status}}</td>
+            <td><a href={% url 'edit' item.id%}> Edit</a><a href={% url 'delete' item.id%}>Delete</a></td>
+        </tr>
+        {%endfor%}
+    </table>
+{% endblock body %}
