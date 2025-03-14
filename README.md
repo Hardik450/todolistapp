@@ -65,5 +65,5 @@ This project is licensed under the **MIT License**.
 
 ---
 
-📧 **Contact:** If you have any questions, feel free to reach out via **[Your Email or GitHub Profile]**.
+📧 **Contact:** If you have any questions, feel free to reach out via **hardikjainharsora@gmail.com**.
 
